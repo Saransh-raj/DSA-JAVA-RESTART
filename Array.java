@@ -59,7 +59,15 @@ public class Array {
 
         System.out.println(); // for looking good
 
+        // print all the product of the array element
+        int prod = 1;
+        int[] prod_arr = {1,2,3,4,5,6,7};
+        for(int i=0;i<arr.length;i++){
+            prod *= prod_arr[i];
+        }
+        System.out.println(prod);
 
+        
         sc.close();
     }
 }
