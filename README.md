@@ -4,3 +4,8 @@
 # today i practise pattern printing all the shape and diagram and also start array and 
 # practice question on array
 
+# 25 june 2026 :-
+# Array question practice
+
+# 26 june 2026 :-
+# Array continue question practice
