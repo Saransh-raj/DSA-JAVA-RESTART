@@ -48,7 +48,18 @@ public class Array {
         }
         System.out.println(sum); // it print sum of the array
 
-        
+        // divide array element by 2
+        int[] two_divide = {4,6,8,10,12,15,9};
+        for(int i=0;i<two_divide.length;i++){
+            two_divide[i] /= 2;
+        }
+        for(int i=0 ;i<two_divide.length;i++){
+            System.out.print(two_divide[i]+" ");
+        }
+
+        System.out.println(); // for looking good
+
+
         sc.close();
     }
 }
