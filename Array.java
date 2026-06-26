@@ -46,7 +46,7 @@ public class Array {
         for(int i=0;i<sum_arr.length;i++){
             sum += sum_arr[i];
         }
-        System.out.println(sum); // it print sum of the array
+        System.out.println("sum = "+sum); // it print sum of the array
 
         // divide array element by 2
         int[] two_divide = {4,6,8,10,12,15,9};
@@ -62,12 +62,30 @@ public class Array {
         // print all the product of the array element
         int prod = 1;
         int[] prod_arr = {1,2,3,4,5,6,7};
-        for(int i=0;i<arr.length;i++){
+        for(int i=0;i<prod_arr.length;i++){
             prod *= prod_arr[i];
         }
-        System.out.println(prod);
+        System.out.println("Prod of array element = "+prod);
 
-        
+        // print the maximum element of the array
+        int[] max_arr = {5,7,9,12,15,14,1,6};
+        int max = max_arr[0];
+        for(int i=0;i<max_arr.length;i++){
+            if(max_arr[i]>max){
+                max = max_arr[i];
+            }
+        }
+        System.out.println(max);
+
+        // print the minimum element of the array
+        int[] min_arr = {5,7,9,12,15,14,1,6};
+        int min = min_arr[0];
+        for(int i=0;i<min_arr.length;i++){
+            if(min_arr[i]<min){
+                min = min_arr[i];
+            }
+        }
+        System.out.println(min);
         sc.close();
     }
 }
