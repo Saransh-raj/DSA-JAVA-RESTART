@@ -101,6 +101,19 @@ public class Array {
         de[1] = 90;
         System.out.println(de[1]);  // 90
         System.out.println(deep[1]); // 20
+
+        // multiply odd index element by 2 and add 10 to even indexed elements
+        int[] ara = {2,5,8,9,12,16,15,18,20};
+        for(int i=0;i<ara.length;i++){
+            if(i%2==0){
+                ara[i] += 10;
+            }else{
+                ara[i] *= 2;
+            }
+        }
+        for(int i=0;i<ara.length;i++){
+            System.out.print(ara[i]+ " ");
+        }
         sc.close();
     }
 }
