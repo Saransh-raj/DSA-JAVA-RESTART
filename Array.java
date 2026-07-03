@@ -86,6 +86,12 @@ public class Array {
             }
         }
         System.out.println(min);
+
+        // shallow copy of an array
+        int[] shallow = {1,2,3,4,5,6,7};
+        int[] sh = shallow;
+        sh[0] = 3;
+        System.out.println(sh[0]); // it print 3 instead of 1
         sc.close();
     }
 }
