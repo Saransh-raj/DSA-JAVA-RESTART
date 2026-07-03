@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Array {
     public static void main(String[] args) {
@@ -91,7 +92,15 @@ public class Array {
         int[] shallow = {1,2,3,4,5,6,7};
         int[] sh = shallow;
         sh[0] = 3;
-        System.out.println(sh[0]); // it print 3 instead of 1
+        System.out.println(shallow[0]); // it print 3 instead of 1
+
+
+        // Deep copy in Array
+        int[] deep = {10,20,30,40,50};
+        int[] de = Arrays.copyOf(deep,deep.length);
+        de[1] = 90;
+        System.out.println(de[1]);  // 90
+        System.out.println(deep[1]); // 20
         sc.close();
     }
 }
