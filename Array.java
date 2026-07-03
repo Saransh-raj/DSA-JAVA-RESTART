@@ -114,6 +114,23 @@ public class Array {
         for(int i=0;i<ara.length;i++){
             System.out.print(ara[i]+ " ");
         }
+
+        System.out.println(); // for looking good
+
+        // Search in array
+        int[] search = {2,5,8,9,12,16,15,18,20};
+        System.out.print("Enter the target element: ");
+        int target = sc.nextInt();
+        boolean flag = false;
+        for(int i=0;i<search.length;i++){
+            if(target == search[i]){
+                flag = true;
+                break;
+            }
+        }
+        if(flag)    System.out.println("Element exist");
+        else   System.out.println("Element not exist");
+        
         sc.close();
     }
 }
