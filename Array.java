@@ -133,6 +133,7 @@ public class Array {
 
         // Two sum problem
         int[] Two_sum = {1,2,5,7,9,8,6,3,4};
+        System.out.println("Enter the target element : ");
         int tar = sc.nextInt();
         for(int i=0;i<Two_sum.length;i++){
             for(int j=i+1;j<Two_sum.length;j++){
@@ -142,6 +143,25 @@ public class Array {
                 }
             }
         }
+
+        // print the second maximum element
+
+        int[] sec_max_ele = {2,9,3,8,6,5,4};
+        int maxi = Integer.MIN_VALUE;
+        int smax = Integer.MIN_VALUE;
+
+        //calculate max
+        for(int i=0;i<sec_max_ele.length;i++){
+             if(sec_max_ele[i] > maxi) maxi = sec_max_ele[i];
+        }
+
+        //calculate second max
+        for(int i=0;i<sec_max_ele.length;i++){
+            if(sec_max_ele[i]>smax && sec_max_ele[i] != maxi)  smax = sec_max_ele[i];
+        }
+        System.out.println("Maximum : "+maxi);
+        System.out.println("Second Maximum : "+smax);
+
         
         sc.close();
     }
