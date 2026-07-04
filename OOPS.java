@@ -1,3 +1,4 @@
+import java.util.*;
 public class OOPS {
 
     // class :- class is a blueprint of an object
@@ -6,9 +7,18 @@ public class OOPS {
         int roll;
         double CGPA;
     }
+
+    // car class
+    public static class Car {
+        String name;
+        int seats;
+        double engineCapacity;
+    }
     public static void main(String[] args) {
 
-        // object is an real world entity
+        Scanner sc = new Scanner(System.in);
+
+        //object :- object is an real world entity
         Student s1 = new Student(); // s1 is a student 1 object
         s1.name = "Saransh Raj"; // student 1 assigning name
         s1.roll = 23;   // student 1 assigning roll
@@ -23,5 +33,17 @@ public class OOPS {
         s2.CGPA = 9.01; // student 2 assigning CGPA
 
         System.out.println("Name : "+s2.name + ", roll : "+s2.roll+", CGPA : "+s2.CGPA);
+
+        // car class object
+        Car c1 = new Car();
+        c1.name = sc.nextLine();
+        c1.seats = sc.nextInt();
+        c1.engineCapacity = sc.nextDouble();
+
+        System.out.println("Name of car : "+c1.name);
+        System.out.println("Seats : "+c1.seats);
+        System.out.println("Engine Capacity : "+c1.engineCapacity);
+
+        sc.close();
     }
 }
