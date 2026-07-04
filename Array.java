@@ -147,8 +147,8 @@ public class Array {
         // print the second maximum element
 
         int[] sec_max_ele = {2,9,3,8,6,5,4};
-        int maxi = Integer.MIN_VALUE;
-        int smax = Integer.MIN_VALUE;
+        int maxi = Integer.MIN_VALUE; // for maximum element
+        int smax = Integer.MIN_VALUE; // for second maximum element
 
         //calculate max
         for(int i=0;i<sec_max_ele.length;i++){
@@ -161,6 +161,23 @@ public class Array {
         }
         System.out.println("Maximum : "+maxi);
         System.out.println("Second Maximum : "+smax);
+
+        // Reverse the array
+        int[] rev = {3,5,4,6,7,9,1};
+        int left = 0;
+        int right = rev.length-1;
+        while(left<=right){
+            int temp = rev[left];
+            rev[left] = rev[right];
+            rev[right] = temp;
+            left++;
+            right--;
+        }
+        for(int i=0;i<rev.length;i++){
+            System.out.print(rev[i] + " ");
+        }
+
+        System.out.println(); // for looking good
 
         
         sc.close();
