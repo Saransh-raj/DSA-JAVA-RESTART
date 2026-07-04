@@ -130,6 +130,18 @@ public class Array {
         }
         if(flag)    System.out.println("Element exist");
         else   System.out.println("Element not exist");
+
+        // Two sum problem
+        int[] Two_sum = {1,2,5,7,9,8,6,3,4};
+        int tar = sc.nextInt();
+        for(int i=0;i<Two_sum.length;i++){
+            for(int j=i+1;j<Two_sum.length;j++){
+                if(Two_sum[i] + Two_sum[j] == tar){
+                    System.out.println("pair exist "+Two_sum[i]+ " "+Two_sum[j]);
+                    break;
+                }
+            }
+        }
         
         sc.close();
     }
