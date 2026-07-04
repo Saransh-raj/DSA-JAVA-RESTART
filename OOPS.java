@@ -15,5 +15,12 @@ public class OOPS {
 
         System.out.println("Name : "+s1.name + ", roll : "+s1.roll+", CGPA : "+s1.CGPA);
 
+
+        Student s2 = new Student(); // s1 is a student 1 object
+        s2.name = "Jaghvi"; // student 1 assigning name
+        s2.roll = 22;   // student 1 assigning roll
+        s2.CGPA = 9.01; // student 1 assigning CGPA
+
+        System.out.println("Name : "+s2.name + ", roll : "+s2.roll+", CGPA : "+s2.CGPA);
     }
 }
