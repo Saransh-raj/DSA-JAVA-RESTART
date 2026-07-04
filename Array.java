@@ -166,7 +166,7 @@ public class Array {
         int[] rev = {3,5,4,6,7,9,1};
         int left = 0;
         int right = rev.length-1;
-        while(left<=right){
+        while(left<right){
             int temp = rev[left];
             rev[left] = rev[right];
             rev[right] = temp;
