@@ -6,7 +6,6 @@ public class Array_Question {
 
         // Rotation of array
         int[] arr = {2,3,7,9,5,4,6};
-        int n = arr.length;
         System.out.println("Enter rotation index : ");
         int d = sc.nextInt();
 
