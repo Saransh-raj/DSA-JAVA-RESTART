@@ -29,6 +29,19 @@ public class Array_Question {
         for (int num : result) {
             System.out.print(num + " ");
         }
+        System.out.println();
+        // count the number of occurrences of a particular element x
+
+        int[] arrr = {1,2,3,4,1,5,4,2,1,4,4};
+        int count = 0;
+        System.out.println("Enter the target element : ");
+        int tar = sc.nextInt();
+        for(int i = 0;i<arrr.length;i++){
+            if(tar == arrr[i]){
+                count++;
+            }
+        }
+        System.out.println(tar+" occur "+count+ " times");
 
         sc.close();
     }
