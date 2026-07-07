@@ -55,6 +55,18 @@ public class Array_Question {
         }
         System.out.println("Last Occurrences of the element : "+x+" is "+lastIndex);
 
+        // count the number of elements strictly  greater than the value x :-
+        int[] araa = {1,2,3,4,5,9,2,5};
+        int cot = 0;
+        System.out.println("Enter element : ");
+        int y = sc.nextInt();
+        for(int i=0;i<araa.length;i++){
+            if(araa[i] > y){
+                cot++;
+            }
+        }
+        System.out.println("The number of elements strictly greater than the value x"+cot);
+        
         sc.close();
     }
 }
