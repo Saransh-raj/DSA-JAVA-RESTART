@@ -78,6 +78,27 @@ public class Array_Question {
         }
         System.out.println(check);
 
+        // Find the unique element in the array which occur once in array
+
+        int[] array = {1,2,3,4,3,2,1};
+        
+        for(int i=0;i<array.length;i++){
+            for(int s=i+1;s<array.length;s++){
+                if(array[i]==array[s]){
+                    array[i] = -1;
+                    array[s] = -1;
+                }
+            }
+        }
+
+        int xns = -1;
+        for(int i=0;i<array.length;i++){
+            if(array[i]>0){
+                xns = array[i];
+            }
+        }
+        System.out.println(xns);
+
         sc.close();
     }
 }
