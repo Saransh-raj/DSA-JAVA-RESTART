@@ -43,6 +43,18 @@ public class Array_Question {
         }
         System.out.println(tar+" occur "+count+ " times");
 
+        //find last occurrences of the element x
+        int[] ara = {1,2,3,4,1,5,4,2,1,4,4};
+        System.out.println("Enter target : ");
+        int x = sc.nextInt();
+        int lastIndex = -1;
+        for(int i=0;i<ara.length;i++){
+            if(ara[i] == x){
+                lastIndex = i;
+            }
+        }
+        System.out.println("Last Occurrences of the element : "+x+" is "+lastIndex);
+
         sc.close();
     }
 }
