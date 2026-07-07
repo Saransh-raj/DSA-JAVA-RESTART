@@ -65,8 +65,19 @@ public class Array_Question {
                 cot++;
             }
         }
-        System.out.println("The number of elements strictly greater than the value x"+cot);
-        
+        System.out.println("The number of elements strictly greater than the value : "+y+ " is : "+cot);
+
+        // check the given array is sorted or not
+        int[] arra = {1,2,5,6,21,45,67,3,2,9};
+        boolean check = true;
+        for(int i=1;i<arra.length;i++){
+            if(arra[i] < arra[i-1]){
+                check = false;
+                break;
+            }
+        }
+        System.out.println(check);
+
         sc.close();
     }
 }
