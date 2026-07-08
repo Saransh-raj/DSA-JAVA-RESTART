@@ -7,8 +7,14 @@ public class ArrayQuestion {
         a = b;
         b = temp;
 
+        // we can also do swapping with using arithimetic operator without using temperory variable
+        // a = a + b;
+        // b = a - b;
+        // a = a - b;
+
         System.out.println(a+" , "+b);
     }
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // return the first value that is repeating in this array if no value is being repeated , return -1
@@ -32,7 +38,17 @@ public class ArrayQuestion {
         int b = 20;
         swap(a, b); // swap method call
 
-        
+
+        // Reverse the array consisting of an integer into ans[] array
+        int[] array = {1,2,3,4,5};
+        int[] ans = new int[array.length];
+        int j = 0;
+        for(int i=array.length-1;i>=0;i--){
+            ans[j++] = array[i];
+        }
+        for(int num : ans){
+            System.out.print(num+" ");
+        }
         sc.close();
     }
 }
