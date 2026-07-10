@@ -24,5 +24,18 @@ public class PrefixSum {
         for(int num : arr){
             System.out.print(num +" ");
         }
+
+        System.out.println();
+
+        
+        // suffix sum code :- 
+        int[] array = {1,2,3,4,5};
+        for(int i=array.length-2;i>=0;i--){
+            array[i] = array[i] + array[i+1];
+        }
+
+        for(int num : array){
+            System.out.print(num + " ");
+        }
     }
 }
