@@ -46,7 +46,7 @@ public class Matrix_multiplication {
             for(int j=0;j<c2;j++){
                 
                 for(int k=0;k<c1;k++){
-                    mul[i][j] += (matrix_1[i][k] + matrix_2[k][j]);
+                    mul[i][j] += (matrix_1[i][k] * matrix_2[k][j]);
                 }
             }
         }
