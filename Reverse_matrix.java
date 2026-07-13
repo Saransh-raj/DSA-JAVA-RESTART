@@ -9,6 +9,7 @@ public class Reverse_matrix {
         int col = sc.nextInt();
         int[][] matrix = new int[row][col];
 
+        System.out.println("Enter "+row*col+" elements :- ");
         // taking input in matrix
         for(int i=0;i<row;i++){
             for(int j=0;j<col;j++){
