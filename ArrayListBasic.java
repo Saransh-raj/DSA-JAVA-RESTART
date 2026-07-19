@@ -19,5 +19,9 @@ public class ArrayListBasic {
         System.out.println(arr.get(3));
         System.out.println(arr.get(4));
 
+
+        arr.set(2, 10); // set the value of the list at index 2 - 10
+        System.out.println(arr.get(2)); // 10
+        
     }
 }
